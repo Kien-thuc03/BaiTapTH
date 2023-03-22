@@ -78,6 +78,7 @@ main {
     border: 1px solid currentColor;
     border-radius: 32px;
     font-size: 14px;
+    background-color: white;
 }
 
 .mid_title button p {
@@ -144,8 +145,155 @@ main {
     border-radius: 5px;
 }
 
-.mid_meeting_main button {
+.mid_meeting_main_mic {
     right: 25px;
     top: 15px;
     position: absolute;
+    height: 36px;
+    width: 36px;
+    border: none;
+    border-radius: 4px;
+}
+
+.mid_meeting_participants_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.mid_meeting_participants_list li {
+    position: relative;
+    list-style-type: none;
+}
+
+.mid_meeting_participants_name {
+    width: 111px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.mid_meeting_participants_mic {
+    right: 8px;
+    top: 10px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+.mid_meeting_participants_name {
+    left: 8px;
+    top: 10px;
+    background-color: #727477;
+    width: 111px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #e0e0e1;
+    position: absolute;
+}
+
+.mid_meeting_participants_name p {
+    color: #1dd75b;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background-color: #1dd75b;
+    border-radius: 5px;
+}
+
+.mid_meeting_btn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mid_meeting_btn_item {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 9px;
+}
+
+.mid_meeting_btn_item_end_meeting {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 9px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 45px;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.right {
+    width: 440px;
+}
+
+.right_participant {
+    border-bottom: 2px solid #eff1f3;
+    padding: 30px 16px 30px 32px;
+}
+
+.right_participant_hearder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.right_participant_hearder_left {
+    display: flex;
+    align-items: center;
+}
+
+.right_participant_hearder_left span {
+    width: 20px;
+    height: 25px;
+    font-size: 10px;
+    color: #e34d73;
+    padding: 6px 7px;
+    background-color: rgba(227, 77, 115, 0.1);
+    border-radius: 16px;
+    margin-left: 4px;
+}
+
+.right_participant_hearder button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 35px;
+    color: #f22128;
+    border: 1px solid currentColor;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.right_participant_detail_user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right_participant_detail_user_inf {
+    display: flex;
+    align-items: center;
+}
+
+.right_participant_detail_user_act {
+    display: flex;
+    align-items: center;
 }
